@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React,{ useEffect, useState, Dispatch, SetStateAction } from 'react'
+import React,{  useState, Dispatch, SetStateAction } from 'react'
 import { IRowData,IPerson } from './IRow'
 
 type Props = {

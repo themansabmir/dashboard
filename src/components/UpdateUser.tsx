@@ -1,6 +1,5 @@
 import axios from 'axios'
 import React,{useState, Dispatch, SetStateAction} from 'react'
-import { useQuery } from 'react-query'
 import { IRowData,IPerson } from './IRow'
 
 

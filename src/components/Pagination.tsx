@@ -1,4 +1,4 @@
-import React,{useState,Dispatch,SetStateAction} from 'react'
+import React,{Dispatch} from 'react'
 import { IRowData } from './IRow'
 
 interface Props {

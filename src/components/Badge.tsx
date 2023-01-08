@@ -1,4 +1,3 @@
-import React from 'react'
 import { IRowData } from './IRow'
 
 type Props={

@@ -1,8 +1,5 @@
-import axios from 'axios'
-import React, { FC,useState, useEffect} from 'react'
-import { useQuery } from 'react-query'
+import { useState} from 'react'
 import { IRowData } from './IRow'
-import Edit  from '../assets/edit.svg'
 
 
 import UpdateUser from './UpdateUser'
