@@ -32,8 +32,8 @@ const UpdateUser = ({record, showUpdate, setShowUpdate}:Props) => {
 
     const submitHandler = async (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         e.preventDefault();
-        await axios.put(`http://localhost:3000/users/${record.id}`, updateData).then(() => {
-            console.log("Bhai hogaya update")
+        await axios.put(`${process.env.REACT_APP_API}/${record.id}`, updateData).then(() => {
+  
             setShowUpdate(!showUpdate)
             window.location.reload()
         })

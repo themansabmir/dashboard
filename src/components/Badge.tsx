@@ -1,4 +1,5 @@
 import { IRowData } from './IRow'
+import React from 'react'
 
 type Props={
     records:IRowData

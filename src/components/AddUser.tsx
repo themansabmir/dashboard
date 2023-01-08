@@ -36,7 +36,7 @@ const AddUser = ({ getRecords,setAddUser,addUser }: Props) => {
 
     const submitHandler = async (e:  React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         e.preventDefault();
-        await axios.post(`http://localhost:3000/users/`, record).then(() => {
+        await axios.post(`${process.env.REACT_APP_API}`, record).then(() => {
             setAddUser(!addUser)
             window.location.reload()
 

@@ -10,12 +10,16 @@ import Pagination from './Pagination'
 
 
 const deleteRecord = async (id: any) => {
-    await axios.delete(`http://localhost:3000/users/${id}`)
+    await axios.delete(`${process.env.REACT_APP_API}/${id}`)
     window.location.reload()
 
 }
+
+
+
+
 const getRecords = async () => {
-    return await axios.get('http://localhost:3000/users/')
+    return await axios.get(`${process.env.REACT_APP_API}`)
 }
 
 

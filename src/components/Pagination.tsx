@@ -13,7 +13,7 @@ interface Props {
 
 
 const Pagination = ({ records, first,last ,setFirst,setLast}: Props) => {
-  const pageNumbers=[]
+  const pageNumbers:number[]=[]
 
   for(let i=1;i<=Math.ceil(records.length/5);i++){
     pageNumbers.push(i)
